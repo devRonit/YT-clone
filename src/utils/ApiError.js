@@ -1,5 +1,7 @@
 // We are making this class to handle HTTP errors
 
+import { useDebugValue } from "react"
+
 class ApiError extends Error {        // ApiError inherits the inbuilt Error class in JS
     constructor(
         statusCode, 
@@ -23,3 +25,5 @@ class ApiError extends Error {        // ApiError inherits the inbuilt Error cla
 
     }
 }
+
+export default ApiError
